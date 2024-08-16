@@ -3,7 +3,7 @@ import ImageBannerAbout from "../../assets/ImageBannerAbout.png";
 const BannerAbout = () => {
   return (
     <div className="Banner">
-      <ImageBannerAbout />
+      <img src={ImageBannerAbout} alt="Banner about" />
     </div>
   );
 };
