@@ -1,0 +1,94 @@
+body {
+  background-color: #fff;
+}
+
+.Header_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-center;
+}
+
+.Nav_Links {
+  display: flex;
+  gap: 15px;
+  font-family: "Montserrat";
+  font-size: 24px;
+  font-weight: 500;
+  text-align: right;
+  padding-right: 35px;
+}
+.Nav_Links li {
+  list-style: none;
+}
+.Nav_Links .HomeLink {
+  text-decoration: none;
+  color: Black;
+}
+.Nav_Links .AboutLink {
+  text-decoration: none;
+  color: Black;
+}
+
+.Banner {
+  position: relative;
+  width: 100%;
+  max-width: 1240px;
+  margin: auto;
+  height: 223px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Banner img {
+  position: absolute;
+  border-radius: 25px;
+  width: 100%;
+  height: 223px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.Banner_Title {
+  font-size: 36px;
+  color: white;
+  text-align: center;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.Gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.Thumb {
+  text-decoration: none;
+  color: inherit;
+}
+
+.Thumb_Content {
+  position: relative;
+}
+
+.Thumb_Image {
+  width: 100%;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}
+
+.Thumb_Title {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 5px 10px;
+  border-radius: 5px;
+}/*# sourceMappingURL=Style.css.map */
