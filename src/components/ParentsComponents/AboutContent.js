@@ -1,7 +1,7 @@
 import Collapse from '../ChildsComponents/Collapse';
 
 
-const AboutCollapse = () => {
+const AboutContent = () => {
     return (
         <div className="">
             <Collapse/>
@@ -10,4 +10,4 @@ const AboutCollapse = () => {
 }
 
 
-export default AboutCollapse;
+export default AboutContent;
