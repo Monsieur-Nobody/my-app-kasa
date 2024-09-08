@@ -1,10 +1,16 @@
-import BannerHome from "../ParentsComponents/BannerHome";
-import Gallery from "../ParentsComponents/Gallery";
+import Banner from "../ChildsComponents/Banner";
+import imageHome from "../../assets/ImageBanner.png";
+import Gallery from "../ChildsComponents/Gallery";
 
 const HomePage = () => {
   return (
     <div className="Home_Page_Style">
-      <BannerHome />
+      <Banner 
+        imageSrc={imageHome} 
+        text="Chez vous, partout et ailleurs" 
+        altText="Home Banner" 
+        bannerClass="home-banner"
+      />
       <Gallery />
     </div>
   );

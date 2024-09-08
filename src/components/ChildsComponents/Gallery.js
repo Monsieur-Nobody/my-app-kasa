@@ -1,4 +1,4 @@
-import Thumb from '../ChildsComponents/Thumb';
+import Thumb from './Thumb';
 import accommodationData from '../../data/accommodation.json';
 
 const Gallery = () => {

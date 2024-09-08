@@ -1,94 +1,310 @@
-body {
-  background-color: #fff;
+@charset "UTF-8";
+.banner {
+  position: relative;
+  text-align: center;
+  color: white;
+  margin-bottom: 43px;
+}
+.banner .banner-image {
+  width: 1240px;
+  height: 223px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 25px;
+}
+.banner .banner-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  font-weight: bold;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.home-banner img {
+  border-radius: 25px;
+  opacity: 0.95;
+  background: #000;
+  mix-blend-mode: darken;
+}
+
+.content-location {
+  max-width: 1440px;
+  width: 100%;
+}
+.content-location .first_block_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.content-location .first_block_content .title-location {
+  line-height: 142%;
+}
+.content-location .first_block_content .title-location h1 {
+  font-size: 36px;
+  color: #ff6060;
+  font-weight: 550;
+}
+.content-location .first_block_content .title-location p {
+  color: black !important;
+  font-size: 18px;
+}
+.content-location .second_block_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.content-location .second_block_content .rating {
+  color: #ff6060;
+  padding-right: 25px;
+}
+.content-location .second_block_content .rating .rating-stars {
+  font-size: 36px;
+}
+.content-location .second_block_content .tags-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+.content-location .second_block_content .tags-container .tag {
+  color: white;
+  background-color: #ff6060;
+  border-radius: 25px;
+  width: 115px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 16px;
+  padding: 6px;
+  text-wrap: nowrap;
+}
+.content-location .third_block_content {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+.content-location .third_block_content .collapse-container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.content-location .third_block_content .collapse-container .collapse-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  width: 95%;
+  height: 65px;
+  border-radius: 15px;
+  border: none;
+  background-color: #ff6060;
+}
+.content-location .third_block_content .collapse-container .collapse-content {
+  background-color: #f6f6f6;
+  color: #000;
+  text-wrap: pretty;
+  width: 80%;
+  font-size: 26px;
+  padding: 20px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  margin-top: 50px;
+  padding-top: 66px;
+  color: white;
+  font-size: 24px;
+}
+footer img {
+  filter: grayscale(100%);
+  padding-bottom: 28px;
+  width: 122px;
+}
+
+.Gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 60px;
+  border-radius: 25px;
+  background: #f6f6f6;
+  margin-left: 100px;
+  margin-right: 100px;
+  padding: 43px 100px 43px 100px;
+}
+.Gallery .Thumb {
+  position: relative; /* To position the title relative to the thumb */
+  overflow: hidden;
+  border-radius: 10px;
+}
+.Gallery .Thumb img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.Gallery .Thumb h2 {
+  position: absolute; /* Position the title absolutely inside the Thumb */
+  bottom: 5px; /* Stick to the bottom with a little padding */
+  left: 10px; /* Stick to the left with a little padding */
+  padding: 5px;
+  color: white; /* White text for contrast */
+  font-size: 18px; /* Adjust font size */
+  max-width: 45%;
+  line-height: 142%;
 }
 
 .Header_container {
   display: flex;
   justify-content: space-between;
-  align-items: flex-center;
+  align-items: center;
+  padding: 45px 100px 50px 100px;
 }
-
-.Nav_Links {
+.Header_container .Nav_Links {
   display: flex;
-  gap: 15px;
-  font-family: "Montserrat";
+  align-items: flex-start;
+  gap: 57px;
+  font-family: Montserrat;
   font-size: 24px;
-  font-weight: 500;
+  font-weight: 650;
   text-align: right;
-  padding-right: 35px;
 }
-.Nav_Links li {
+.Header_container .Nav_Links li {
   list-style: none;
 }
-.Nav_Links .HomeLink {
+.Header_container .Nav_Links .HomeLink {
   text-decoration: none;
   color: Black;
 }
-.Nav_Links .AboutLink {
+.Header_container .Nav_Links .AboutLink {
   text-decoration: none;
   color: Black;
+}
+.Header_container .Logo_Container img {
+  width: 210.322px;
+  height: 68px;
 }
 
-.Banner {
-  position: relative;
-  width: 100%;
-  max-width: 1240px;
-  margin: auto;
-  height: 223px;
+.host-location {
   display: flex;
+  gap: 10px;
+}
+.host-location .host-name {
+  line-height: 142%;
+  max-width: 40%;
+  text-align: right;
+  padding-right: 5px;
+  font-weight: 650;
+  color: #ff6060;
+}
+.host-location img {
+  border-radius: 75px;
+  width: 64px;
+  height: 64px;
+}
+
+body {
+  background-color: #fff;
+  font-family: "Montserrat";
+}
+
+.location-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.not-found-page {
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-}
-
-.Banner img {
-  position: absolute;
-  border-radius: 25px;
-  width: 100%;
-  height: 223px;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.Banner_Title {
-  font-size: 36px;
-  color: white;
+  height: 100vh;
   text-align: center;
-  z-index: 1;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
+  background-color: #f8f8f8;
+  color: #333;
 }
-
-.Gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 20px;
-  padding: 20px;
+.not-found-page h1 {
+  font-size: 5rem;
+  color: #ff6b6b;
 }
-
-.Thumb {
+.not-found-page p {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.not-found-page .home-link {
+  font-size: 1.2rem;
+  color: #007BFF;
   text-decoration: none;
-  color: inherit;
+  border: 2px solid #007BFF;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+.not-found-page .home-link:hover {
+  background-color: #007BFF;
+  color: #fff;
 }
 
-.Thumb_Content {
+.slider-container {
+  width: 1440px;
+  height: 415px;
+  margin: 0 auto;
   position: relative;
 }
-
-.Thumb_Image {
-  width: 100%;
-  height: 200px;
+.slider-container .slick-prev:before,
+.slider-container .slick-next:before {
+  content: none !important; /* Masquer le contenu de base des flèches Slick */
+}
+.slider-container .slick-arrow {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 30px;
+  color: white;
+  background: none;
+  border: none;
+}
+.slider-container .slick-prev {
+  left: 10px;
+}
+.slider-container .slick-next {
+  right: 10px;
+}
+.slider-container .slick-prev:hover, .slider-container .slick-next:hover {
+  color: white; /* Garde les flèches blanches au survol */
+}
+.slider-container .slider-image-container {
+  position: relative;
+  text-align: center;
+}
+.slider-container .slider-image-container .image-counter {
+  position: absolute;
+  bottom: 10px; /* Ajustez selon le besoin */
+  right: 50%; /* Ajustez selon le besoin */
+  color: white; /* Couleur du compteur */
+  padding: 5px;
+  border-radius: 5px;
+}
+.slider-container .slider-image-container img {
+  display: block;
+  width: 1440px;
+  height: 415px;
   -o-object-fit: cover;
      object-fit: cover;
-  border-radius: 10px;
-}
-
-.Thumb_Title {
-  position: absolute;
-  bottom: 10px;
-  left: 10px;
-  color: white;
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 5px 10px;
-  border-radius: 5px;
+  border-radius: 25px;
 }/*# sourceMappingURL=Style.css.map */

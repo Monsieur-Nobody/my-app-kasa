@@ -1,20 +1,15 @@
-import accommodationData from '../../data/accommodation.json'
-const Tag = ({ id }) => {
-    const accommodation = accommodationData.find(acc => acc.id === id);
-  
-    if (!accommodation || !accommodation.tags) {
-      return null;
-    }
-  
-    return (
+const Tag = ({ tags }) => {
+  if (!tags || tags.length === 0) {
+      return null; // Retourne null si aucun tag n'est fourni ou si la liste est vide
+  }
+
+  return (
       <div className="tags-container">
-        {accommodation.tags.map((tag, index) => (
-          <span key={index} className="tag">
-            {tag}
-          </span>
-        ))}
+          {tags.map((tag, index) => (
+              <span key={index} className="tag">{tag}</span>
+          ))}
       </div>
-    );
-  };
-  
-  export default Tag;
+  );
+};
+
+export default Tag;
