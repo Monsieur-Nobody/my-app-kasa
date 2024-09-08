@@ -39,28 +39,28 @@ FontAwesome : Pour les icônes (chevrons, étoiles de notation, etc.).
 
 <H4>Installation et exécution</H4>
 
-Clonez ce dépôt :
+Clonez ce dépôt :</br>
 
-bash
-Copier le code
-git clone https://github.com/ton-utilisateur/kasa.git
-Installez les dépendances du projet :
+bash</br>
+Copier le code</br>
+git clone https://github.com/ton-utilisateur/kasa.git</br>
+Installez les dépendances du projet :</br>
 
-bash
-Copier le code
-cd kasa
-npm install
-Installez FontAwesome pour les icônes :
+bash</br>
+Copier le code</br>
+cd kasa</br>
+npm install</br>
+Installez FontAwesome pour les icônes :</br>
 
-bash
-Copier le code
-npm install --save @fortawesome/fontawesome-svg-core @fortawesome/free-solid-svg-icons @fortawesome/react-fontawesome
-Lancez l'application en mode développement :
+bash</br>
+Copier le code</br>
+npm install --save @fortawesome/fontawesome-svg-core @fortawesome/free-solid-svg-icons @fortawesome/react-fontawesome</br>
+Lancez l'application en mode développement :</br>
 
-bash
-Copier le code
-npm start
-Ouvrez le navigateur à l'adresse http://localhost:3000 pour visualiser l'application.
+bash</br>
+Copier le code</br>
+npm start</br>
+Ouvrez le navigateur à l'adresse http://localhost:3000 pour visualiser l'application.</br>
 
 Auteur
 Projet réalisé par Youaabed Romain dans le cadre de la formation OpenClassrooms.
