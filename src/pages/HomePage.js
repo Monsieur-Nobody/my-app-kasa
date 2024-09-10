@@ -1,6 +1,6 @@
-import Banner from "../ChildsComponents/Banner";
-import imageHome from "../../assets/ImageBanner.png";
-import Gallery from "../ChildsComponents/Gallery";
+import Banner from "../components/Banner";
+import imageHome from "../assets/ImageBanner.png";
+import Gallery from "../components/Gallery";
 
 const HomePage = () => {
   return (

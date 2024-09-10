@@ -1,5 +1,5 @@
 import Thumb from './Thumb';
-import accommodationData from '../../data/accommodation.json';
+import accommodationData from '../data/accommodation.json';
 
 const Gallery = () => {
   return (

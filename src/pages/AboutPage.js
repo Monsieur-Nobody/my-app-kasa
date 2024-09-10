@@ -1,6 +1,6 @@
-import Banner from "../ChildsComponents/Banner";
-import AboutContent from "../ChildsComponents/AboutContent";
-import imageAbout from "../../assets/ImageBannerAbout.png"
+import Banner from "../components/Banner";
+import AboutContent from "../components/AboutContent";
+import imageAbout from "../assets/ImageBannerAbout.png"
 
 const AboutPage = () => {
   return (

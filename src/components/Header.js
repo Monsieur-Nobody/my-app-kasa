@@ -1,10 +1,10 @@
-import Logo from "./Logo";
 import Nav from "./Nav";
+import LOGO from "../assets/LOGO.svg"; // Chemin vers l'image du logo
 
 const Header = () => {
   return (
     <div className="Header_container">
-      <Logo className="LogoHeader" />
+      <img src={LOGO} alt="Kasa Logo" className="LogoHeader" />
       <Nav />
     </div>
   );

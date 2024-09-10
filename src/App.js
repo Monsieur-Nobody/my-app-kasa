@@ -1,11 +1,11 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Header from './components/ChildsComponents/Header'
-import HomePage from './components/PageComponents/HomePage'
-import AboutPage from './components/PageComponents/AboutPage'
-import LocationPage from './components/PageComponents/LocationPage'
-import NotFoundPage from './components/PageComponents/NotFoundPage'
-import Footer from './components/ChildsComponents/Footer'
+import Header from './components/Header'
+import HomePage from './pages/HomePage'
+import AboutPage from './pages/AboutPage'
+import LocationPage from './pages/LocationPage'
+import NotFoundPage from './pages/NotFoundPage'
+import Footer from './components/Footer'
 
 const App = () => {
   return (

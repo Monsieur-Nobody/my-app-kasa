@@ -1,4 +1,3 @@
-@charset "UTF-8";
 .about-content {
   display: flex;
   flex-direction: column;
@@ -13,7 +12,8 @@
   width: auto;
   font-size: 26px;
   padding: 20px;
-  line-height: 120%;
+  line-height: 142%;
+  font-weight: 500;
 }
 .about-content .collapse-button {
   display: flex;
@@ -61,70 +61,89 @@
 }
 
 .content-location {
+  display: flex;
+  flex-direction: column;
   max-width: 1440px;
   width: 100%;
+  gap: 40px;
 }
 .content-location .first_block_content {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 20px;
 }
-.content-location .first_block_content .title-location {
+.content-location .first_block_content .name_tags_content .title-location {
   line-height: 142%;
 }
-.content-location .first_block_content .title-location h1 {
+.content-location .first_block_content .name_tags_content .title-location h1 {
   font-size: 36px;
   color: #ff6060;
   font-weight: 550;
 }
-.content-location .first_block_content .title-location p {
+.content-location .first_block_content .name_tags_content .title-location p {
   color: black !important;
   font-size: 18px;
 }
-.content-location .second_block_content {
+.content-location .first_block_content .name_tags_content .tags-container {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 20px;
-}
-.content-location .second_block_content .rating {
-  color: #ff6060;
-  padding-right: 25px;
-}
-.content-location .second_block_content .rating .rating-stars {
-  font-size: 36px;
-}
-.content-location .second_block_content .tags-container {
-  display: flex;
-  justify-content: space-between;
   align-items: center;
   gap: 15px;
 }
-.content-location .second_block_content .tags-container .tag {
+.content-location .first_block_content .name_tags_content .tags-container .tag {
   color: white;
   background-color: #ff6060;
-  border-radius: 25px;
+  border-radius: 10px;
   width: 115px;
+  font-size: 14px;
   text-align: center;
-  font-weight: 700;
-  font-size: 16px;
-  padding: 6px;
   text-wrap: nowrap;
+  line-height: 142%;
+  font-weight: 500;
+  padding: 1%;
 }
-.content-location .third_block_content {
+.content-location .first_block_content .host_rate_content {
   display: flex;
-  justify-content: space-between;
-  gap: 30px;
-  margin-bottom: 20px;
+  flex-direction: column;
+  align-items: end;
 }
-.content-location .third_block_content .collapse-container {
-  width: 50%;
+.content-location .first_block_content .host_rate_content .host-location {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 15px;
+}
+.content-location .first_block_content .host_rate_content .host-location .host-name {
+  line-height: 142%;
+  max-width: 40%;
+  text-align: right;
+  padding-right: 5px;
+  color: #ff6060;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+}
+.content-location .first_block_content .host_rate_content .host-location img {
+  border-radius: 75px;
+  width: 64px;
+  height: 64px;
+}
+.content-location .first_block_content .host_rate_content .rating {
+  color: #ff6060;
+}
+.content-location .first_block_content .host_rate_content .rating .rating-stars {
+  font-size: 36px;
+}
+.content-location .second_block_content {
+  display: flex;
+  gap: 50px;
+}
+.content-location .second_block_content .collapse-container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
 }
-.content-location .third_block_content .collapse-container .collapse-button {
+.content-location .second_block_content .collapse-container .collapse-button {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -138,37 +157,40 @@
   border: none;
   background-color: #ff6060;
 }
-.content-location .third_block_content .collapse-container .collapse-content {
+.content-location .second_block_content .collapse-container .collapse-content {
   background-color: #f6f6f6;
   color: #000;
   text-wrap: pretty;
-  width: 80%;
+  width: 85%;
   font-size: 26px;
   padding: 20px;
-  line-height: 120%;
+  line-height: 142%;
+}
+.content-location .second_block_content .collapse-container .collapse-content ul {
+  list-style-type: none;
+  text-align: left;
+  padding: 0;
 }
 
 footer {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   background-color: black;
   margin-top: 50px;
-  padding-top: 66px;
   color: white;
   font-size: 24px;
 }
 footer img {
-  filter: grayscale(100%);
-  padding-bottom: 28px;
-  width: 122px;
+  width: 250px;
+  padding: 0;
+  border: 0;
 }
 
 .Gallery {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 60px;
+  gap: 50px;
   border-radius: 25px;
   background: #f6f6f6;
   margin-left: 100px;
@@ -176,24 +198,23 @@ footer img {
   padding: 43px 100px 43px 100px;
 }
 .Gallery .Thumb {
-  position: relative; /* To position the title relative to the thumb */
+  position: relative;
   overflow: hidden;
   border-radius: 10px;
 }
 .Gallery .Thumb img {
-  width: 100%;
-  height: 100%;
-  display: block;
+  height: 340px;
+  width: 440px;
   -o-object-fit: cover;
      object-fit: cover;
 }
 .Gallery .Thumb h2 {
-  position: absolute; /* Position the title absolutely inside the Thumb */
-  bottom: 5px; /* Stick to the bottom with a little padding */
-  left: 10px; /* Stick to the left with a little padding */
+  position: absolute;
+  bottom: 5px;
+  left: 10px;
   padding: 5px;
-  color: white; /* White text for contrast */
-  font-size: 18px; /* Adjust font size */
+  color: white;
+  font-size: 18px;
   max-width: 45%;
   line-height: 142%;
 }
@@ -202,7 +223,9 @@ footer img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 45px 100px 50px 100px;
+  padding: 45px 200px 50px 200px;
+  max-width: 1440px;
+  margin: auto;
 }
 .Header_container .Nav_Links {
   display: flex;
@@ -227,24 +250,6 @@ footer img {
 .Header_container .Logo_Container img {
   width: 210.322px;
   height: 68px;
-}
-
-.host-location {
-  display: flex;
-  gap: 10px;
-}
-.host-location .host-name {
-  line-height: 142%;
-  max-width: 40%;
-  text-align: right;
-  padding-right: 5px;
-  font-weight: 650;
-  color: #ff6060;
-}
-.host-location img {
-  border-radius: 75px;
-  width: 64px;
-  height: 64px;
 }
 
 body {
@@ -291,52 +296,45 @@ body {
   color: #fff;
 }
 
-.slider-container {
-  width: 1440px;
-  height: 415px;
+.slider {
+  position: relative;
+  width: 100%;
+  max-width: 1440px;
   margin: 0 auto;
-  position: relative;
+  height: 415px;
+  overflow: hidden;
+  border-radius: 25px;
 }
-.slider-container .slick-prev:before,
-.slider-container .slick-next:before {
-  content: none !important; /* Masquer le contenu de base des flèches Slick */
-}
-.slider-container .slick-arrow {
-  position: absolute;
-  z-index: 1;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 30px;
-  color: white;
-  background: none;
-  border: none;
-}
-.slider-container .slick-prev {
-  left: 10px;
-}
-.slider-container .slick-next {
-  right: 10px;
-}
-.slider-container .slick-prev:hover, .slider-container .slick-next:hover {
-  color: white; /* Garde les flèches blanches au survol */
-}
-.slider-container .slider-image-container {
-  position: relative;
-  text-align: center;
-}
-.slider-container .slider-image-container .image-counter {
-  position: absolute;
-  bottom: 10px; /* Ajustez selon le besoin */
-  right: 50%; /* Ajustez selon le besoin */
-  color: white; /* Couleur du compteur */
-  padding: 5px;
-  border-radius: 5px;
-}
-.slider-container .slider-image-container img {
-  display: block;
-  width: 1440px;
+.slider .slider-image {
+  width: 100%;
   height: 415px;
   -o-object-fit: cover;
      object-fit: cover;
-  border-radius: 25px;
+  display: block;
+}
+.slider .slider-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 2;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.slider .left {
+  left: 10px;
+}
+.slider .right {
+  right: 10px;
+}
+.slider .image-counter {
+  position: absolute;
+  bottom: 15px;
+  right: 50%;
+  color: white;
 }/*# sourceMappingURL=Style.css.map */

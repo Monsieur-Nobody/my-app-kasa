@@ -1,8 +1,8 @@
 import { useParams } from 'react-router-dom';
-import Slider from '../ChildsComponents/Slider';
-import ContentLocation from '../ChildsComponents/ContentLocation';
+import Slider from '../components/Slider';
+import ContentLocation from '../components/ContentLocation';
 import NotFoundPage from './NotFoundPage';
-import accommodationData from '../../data/accommodation.json';
+import accommodationData from '../data/accommodation.json';
 
 const LocationPage = () => {
     const { id } = useParams(); // Récupération de l'ID à partir de l'URL

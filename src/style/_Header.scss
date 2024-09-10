@@ -2,7 +2,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 45px 100px 50px 100px;
+  padding: 45px 200px 50px 200px;
+  max-width: 1440px;
+  margin: auto;
 
   .Nav_Links {
     display: flex;
