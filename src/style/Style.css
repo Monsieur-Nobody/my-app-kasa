@@ -32,7 +32,7 @@
 
 .banner {
   position: relative;
-  text-align: center;
+  width: 100%;
   color: white;
   margin-bottom: 43px;
 }
@@ -51,6 +51,7 @@
   font-size: 3rem;
   font-weight: bold;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  text-align: center;
 }
 
 .home-banner img {
@@ -58,6 +59,10 @@
   opacity: 0.95;
   background: #000;
   mix-blend-mode: darken;
+}
+
+.banner .banner-image {
+  width: 90%;
 }
 
 .content-location {
@@ -219,6 +224,23 @@ footer img {
   line-height: 142%;
 }
 
+@media (max-width: 768px) {
+  .Gallery {
+    grid-template-columns: 1fr;
+    margin-top: 25px;
+  }
+  .Thumb {
+    width: 100%;
+    margin: 10px 0;
+  }
+  .Thumb img {
+    height: 220px;
+  }
+  .Thumb h2 {
+    font-size: 1rem;
+    width: 50%;
+  }
+}
 .Header_container {
   display: flex;
   justify-content: space-between;
@@ -226,6 +248,14 @@ footer img {
   padding: 45px 200px 50px 200px;
   max-width: 1440px;
   margin: auto;
+  width: 100%;
+}
+.Header_container .Nav {
+  display: flex;
+  align-items: center;
+  text-wrap: nowrap;
+  text-decoration: none;
+  color: Black;
 }
 .Header_container .Nav_Links {
   display: flex;
@@ -235,21 +265,29 @@ footer img {
   font-size: 24px;
   font-weight: 650;
   text-align: right;
+  font-style: Black;
+}
+.Header_container .Nav_Links .active-link {
+  color: black;
+  text-decoration: underline;
 }
 .Header_container .Nav_Links li {
   list-style: none;
 }
-.Header_container .Nav_Links .HomeLink {
+.Header_container .Nav_Links li a {
   text-decoration: none;
-  color: Black;
-}
-.Header_container .Nav_Links .AboutLink {
-  text-decoration: none;
-  color: Black;
+  color: black;
 }
 .Header_container .Logo_Container img {
   width: 210.322px;
   height: 68px;
+}
+@media (max-width: 768px) {
+  .Header_container {
+    padding: 10px 60px 10px 60px;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 body {

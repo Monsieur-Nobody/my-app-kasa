@@ -1,6 +1,6 @@
 .banner {
   position: relative;
-  text-align: center;
+width: 100%;
   color: white;
   margin-bottom: 43px;
 
@@ -19,6 +19,7 @@
     font-size: 3rem;
     font-weight: bold;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    text-align: center;
   }
 }
 
@@ -29,5 +30,12 @@
     background: #000;
     mix-blend-mode: darken;
   }
+}
+
+@media (max-width: 768px) {
+ 
+  }
+  .banner .banner-image {
+    width: 90%;
 }
 

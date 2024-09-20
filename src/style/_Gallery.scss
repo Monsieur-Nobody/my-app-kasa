@@ -31,3 +31,23 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .Gallery {
+    grid-template-columns: 1fr; // Grille avec 1 colonne sur mobile
+    margin-top: 25px;
+  }
+
+  .Thumb {
+    width: 100%;
+    margin: 10px 0;
+    img {
+      height: 220px;
+    }
+    
+    & h2 {
+      font-size: 1rem;
+      width: 50%; // Le texte occupe 50% sur mobile
+    }
+  }
+}

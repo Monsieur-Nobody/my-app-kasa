@@ -1,3 +1,4 @@
+
 .Header_container {
   display: flex;
   justify-content: space-between;
@@ -5,7 +6,18 @@
   padding: 45px 200px 50px 200px;
   max-width: 1440px;
   margin: auto;
+  width: 100%;
 
+
+
+    .Nav {
+      display: flex;
+      align-items: center;
+      text-wrap: nowrap;
+      text-decoration: none;
+      color: Black;
+    }
+  
   .Nav_Links {
     display: flex;
     align-items: flex-start;
@@ -14,22 +26,37 @@
     font-size: 24px;
     font-weight: 650;
     text-align: right;
+     font-style : Black;
 
+     .active-link {
+      color: black; 
+      text-decoration: underline;
+    }
     li {
       list-style: none;
-    }
-    .HomeLink {
-      text-decoration: none;
-      color: Black;
-    }
+     
 
-    .AboutLink {
-      text-decoration: none;
-      color: Black;
+      a{
+        text-decoration: none;
+        color: black;
+      }
+
     }
+   
+
   }
   .Logo_Container img {
     width: 210.322px;
     height: 68px;
   }
+
+
+
+@media (max-width: 768px) {
+ padding: 10px 60px 10px 60px; 
+ justify-content: space-between;
+ align-items: center;
+ 
+
+}
 }
